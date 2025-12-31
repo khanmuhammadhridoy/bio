@@ -3,230 +3,170 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>বায়ো-ডাটা - হৃদয় খান</title>
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f0f2f5;
-        margin: 0;
-        padding: 20px;
-        color: #333;
-      }
-      .container {
-        max-width: 900px;
-        margin: 0 auto;
-        background-color: #fff;
-        padding: 30px 40px;
-        border-radius: 12px;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-      }
-      h1 {
-        text-align: center;
-        color: #2c3e50;
-        margin-bottom: 10px;
-        font-size: 32px;
-      }
-      h1 span {
-        color: #3498db;
-        font-size: 36px;
-        display: block;
-        margin-top: 5px;
-      }
-      h2 {
-        color: #2c3e50;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 5px;
-        margin-top: 30px;
-        margin-bottom: 15px;
-        font-size: 22px;
-      }
-      .row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-      .col {
-        flex: 1;
-        min-width: 280px;
-      }
-      p,
-      li {
-        line-height: 1.7;
-      }
-      ul {
-        list-style: disc;
-        padding-left: 20px;
-      }
-      .bangla-conditions {
-        background-color: #eaf4ff;
-        border-left: 5px solid #3498db;
-        padding: 15px 20px;
-        border-radius: 6px;
-        margin: 15px 0;
-      }
-      .section {
-        margin-bottom: 25px;
-      }
-      .info-item {
-        margin: 6px 0;
-      }
-
-      .profile-photo {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.profile-photo img {
-  width: 160px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-
-      @media (max-width: 768px) {
-        .row {
-          flex-direction: column;
-        }
-        h1 {
-          font-size: 28px;
-        }
-        h1 span {
-          font-size: 32px;
-        }
-        h2 {
-          font-size: 20px;
-        }
-        .container {
-          padding: 20px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        body {
-          padding: 10px;
-        }
-        .container {
-          padding: 15px;
-        }
-        h1 {
-          font-size: 24px;
-        }
-        h1 span {
-          font-size: 28px;
-        }
-        h2 {
-          font-size: 18px;
-        }
-      }
-    </style>
+    <title>বায়ো-ডাটা - হৃদয় খান</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body>
-    <div class="container">
-      <div class="profile-photo">
-  <img
-    src="./pic.png"
-    alt="হৃদয় খান"
-  />
-</div>
+  <body class="bg-[#f0f2f5] text-gray-800 p-5">
+    <div
+      class="max-w-4xl mx-auto bg-white p-8 md:p-10 rounded-xl shadow-lg relative"
+    >
+      <!-- ===== Header ===== -->
+      <div class="relative text-center mb-12">
+        <!-- Title -->
+        <h1 class="text-3xl md:text-4xl font-bold text-[#2c3e50]">
+          বায়ো-ডাটা
+          <span class="text-[#3498db] block text-4xl md:text-5xl mt-1">
+            হৃদয় খান
+          </span>
+        </h1>
 
-      <h1>বায়ো-ডাটা<span>হৃদয় খান</span></h1>
-
-      <h2>ব্যক্তিগত তথ্য</h2>
-      <div class="row">
-        <div class="col">
-          <div class="info-item"><strong>পূর্ণ নাম:</strong> হৃদয় খান</div>
-          <div class="info-item"><strong>পিতার নাম:</strong> মোঃ হারুন খান</div>
-          <div class="info-item"><strong>মাতার নাম:</strong> লিলি বেগম</div>
-          <div class="info-item">
-            <strong>জন্ম তারিখ:</strong> ১১ মে ১৯৯৯ (সার্টিফিকেট অনুযায়ী)
-          </div>
-          <div class="info-item"><strong>গায়ের রং:</strong> উজ্জল শ্যামলা</div>
-          <div class="info-item"><strong>উচ্চতা:</strong> ৫ ফুট ৮ ইঞ্চি</div>
+        <!-- Desktop Image (Right side) -->
+        <div class="hidden md:block absolute top-0 right-0">
+          <img
+            src="./pic.png"
+            alt="হৃদয় খান"
+            class="w-40 h-52 object-cover rounded-lg shadow-md"
+          />
         </div>
 
-        <div class="col">
-          <div class="info-item"><strong>ওজন:</strong> ৫৪ কেজি</div>
-          <div class="info-item"><strong>রক্তের গ্রুপ:</strong> B+</div>
-          <div class="info-item"><strong>ধর্ম:</strong> ইসলাম</div>
-          <div class="info-item"><strong>জাতীয়তা:</strong> বাংলাদেশী</div>
-          <div class="info-item"><strong>বৈবাহিক অবস্থা:</strong> অবিবাহিত</div>
-          <div class="info-item"><strong>লিঙ্গ:</strong> পুরুষ</div>
+        <!-- Mobile Image (Below text) -->
+        <div class="block md:hidden mt-6 flex justify-center">
+          <img
+            src="./pic.png"
+            alt="হৃদয় খান"
+            class="w-36 h-48 object-cover rounded-lg shadow-md"
+          />
         </div>
       </div>
 
-      <h2>যোগাযোগের তথ্য</h2>
+      <!-- ===== ব্যক্তিগত তথ্য ===== -->
+      <h2
+        class="text-2xl font-semibold text-[#2c3e50] border-b-2 border-[#3498db] pb-2 mb-6"
+      >
+        ব্যক্তিগত তথ্য
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="space-y-2">
+          <p><strong>পূর্ণ নাম:</strong> হৃদয় খান</p>
+          <p><strong>পিতার নাম:</strong> মোঃ হারুন খান</p>
+          <p><strong>মাতার নাম:</strong> লিলি বেগম</p>
+          <p><strong>জন্ম তারিখ:</strong> ১১ মে ১৯৯৯ (সার্টিফিকেট অনুযায়ী)</p>
+          <p><strong>গায়ের রং:</strong> উজ্জ্বল শ্যামলা</p>
+          <p><strong>উচ্চতা:</strong> ৫ ফুট ৮ ইঞ্চি</p>
+        </div>
+
+        <div class="space-y-2">
+          <p><strong>ওজন:</strong> ৫৪ কেজি</p>
+          <p><strong>রক্তের গ্রুপ:</strong> B+</p>
+          <p><strong>ধর্ম:</strong> ইসলাম</p>
+          <p><strong>জাতীয়তা:</strong> বাংলাদেশী</p>
+          <p><strong>বৈবাহিক অবস্থা:</strong> অবিবাহিত</p>
+          <p><strong>লিঙ্গ:</strong> পুরুষ</p>
+        </div>
+      </div>
+
+      <!-- ===== যোগাযোগ ===== -->
+      <h2
+        class="text-2xl font-semibold text-[#2c3e50] border-b-2 border-[#3498db] pb-2 mb-4"
+      >
+        যোগাযোগের তথ্য
+      </h2>
       <p><strong>ঠিকানা:</strong> খামারগ্রাম, এনায়েতপুর, সিরাজগঞ্জ</p>
       <p><strong>মোবাইল নম্বর:</strong> +৮৮০১৭৬৮৯৪৯৪১৪</p>
-      <p><strong>ই-মেইল:</strong> khanmuhammadhridoy@gmail.com</p>
+      <p class="mb-6"><strong>ই-মেইল:</strong> khanmuhammadhridoy@gmail.com</p>
 
-      <h2>শিক্ষাগত যোগ্যতা</h2>
-      <ul>
+      <!-- ===== শিক্ষা ===== -->
+      <h2
+        class="text-2xl font-semibold text-[#2c3e50] border-b-2 border-[#3498db] pb-2 mb-4"
+      >
+        শিক্ষাগত যোগ্যতা
+      </h2>
+      <ul class="list-disc list-inside space-y-2 mb-6">
         <li>
-          বি.এসসি (কম্পিউটার সায়েন্স ও ইঞ্জিনিয়ারিং) — ২০২৪  
-          <br />জান্নাত আরা হেনরি সায়েন্স অ্যান্ড টেকনোলজি কলেজ (জাতীয় বিশ্ববিদ্যালয়)
+          বি.এসসি (কম্পিউটার সায়েন্স ও ইঞ্জিনিয়ারিং) — ২০২৪, জান্নাত আরা হেনরি
+          সায়েন্স অ্যান্ড টেকনোলজি কলেজ (জাতীয় বিশ্ববিদ্যালয়)
         </li>
         <li>এইচএসসি — ২০১৮, খামারগ্রাম কলেজ (বিজ্ঞান বিভাগ)</li>
-        <li>এসএসসি — ২০১৫, এনায়েতপুর ইসলামিয়া উচ্চ বিদ্যালয় (বিজ্ঞান বিভাগ)</li>
+        <li>
+          এসএসসি — ২০১৫, এনায়েতপুর ইসলামিয়া উচ্চ বিদ্যালয় (বিজ্ঞান বিভাগ)
+        </li>
       </ul>
 
-      <h2>পেশা</h2>
-      <p>সফটওয়্যার / ওয়েব ডেভেলপার</p>
+      <!-- ===== পেশা ===== -->
+      <h2
+        class="text-2xl font-semibold text-[#2c3e50] border-b-2 border-[#3498db] pb-2 mb-4"
+      >
+        পেশা
+      </h2>
+      <p class="mb-6">সফটওয়্যার / ওয়েব ডেভেলপার</p>
 
-      <h2>পারিবারিক তথ্য</h2>
+      <!-- ===== পারিবারিক তথ্য ===== -->
+      <h2
+        class="text-2xl font-semibold text-[#2c3e50] border-b-2 border-[#3498db] pb-2 mb-4"
+      >
+        পারিবারিক তথ্য
+      </h2>
       <p><strong>পিতা:</strong> মোঃ হারুন খান — বর্তমানে কর্মরত নন</p>
       <p><strong>মাতা:</strong> লিলি বেগম — গৃহিণী</p>
       <p><strong>ভাই-বোন:</strong> নেই (একমাত্র সন্তান)</p>
-      <p><strong>পারিবারিক অবস্থা:</strong> সাধারণ ও ধর্মপরায়ণ মুসলিম পরিবার</p>
+      <p class="mb-6">
+        <strong>পারিবারিক অবস্থা:</strong> সাধারণ ও ধর্মপরায়ণ মুসলিম পরিবার
+      </p>
 
-      <h2>ব্যক্তিগত গুণাবলি</h2>
-      <ul>
-        <li>সৎ, দায়িত্বশীল ও পরিবারমুখী</li>
+      <!-- ===== গুণাবলি ===== -->
+      <h2
+        class="text-2xl font-semibold text-[#2c3e50] border-b-2 border-[#3498db] pb-2 mb-4"
+      >
+        ব্যক্তিগত গুণাবলি
+      </h2>
+      <ul class="list-disc list-inside space-y-2 mb-6">
+        <li>সৎ, দায়িত্বশীল</li>
         <li>দ্বীনের প্রতি সচেতন ও ইসলামী মূল্যবোধে বিশ্বাসী</li>
         <li>আধুনিক প্রযুক্তি ও সফটওয়্যার ডেভেলপমেন্টে দক্ষ</li>
       </ul>
 
-      <h2>প্রত্যাশিত জীবনসঙ্গী</h2>
-      <p>
-        আমি এমন একজন জীবনসঙ্গী প্রত্যাশা করি, যিনি দ্বীন ও শরিয়তকে
-        জীবনের অগ্রাধিকার হিসেবে গ্রহণ করবেন এবং ইসলামী আদর্শ অনুযায়ী চলার
-        মানসিকতা রাখবেন।
+      <!-- ===== প্রত্যাশিত জীবনসঙ্গী ===== -->
+
+      <h2
+        class="text-2xl font-semibold text-[#2c3e50] border-b-2 border-[#3498db] pb-2 mb-4"
+      >
+        প্রত্যাশিত জীবনসঙ্গী
+      </h2>
+
+      <p class="mb-6 leading-relaxed">
+        আমি এমন একজন জীবনসঙ্গী প্রত্যাশা করি, যিনি দ্বীন ও শরিয়তকে জীবনের
+        অগ্রাধিকার হিসেবে গ্রহণ করবেন এবং ইসলামী আদর্শ অনুযায়ী চলার মানসিকতা
+        রাখবেন।
       </p>
+      <!-- ===== শর্ত ===== -->
+      <div class="bg-[#eaf4ff] border-l-4 border-[#3498db] p-4 rounded-md">
+        <p class="font-semibold mb-2">কিছু শর্তসমূহ:</p>
 
-        <div class="bangla-conditions">
-          <p><strong>কিছু শর্তসমূহ:</strong></p>
-          <ul>
-            <li>
-              শরিয়ত অনুসারে পরিপূর্ণ পর্দা করতে হবে। শরিয়তে যে ১৪ জন পুরুষের কথা
-              বলা হয়েছে, তাদের বাইরে কারও সাথে দেখা বা ব্যক্তিগত আলাপ হবে না।
-            </li>
-            <li>শরিয়তের সকল বিষয়ে স্বামীর প্রতি সম্পূর্ণ আনুগত্য থাকতে হবে।</li>
-            <li>
-              যেহেতু আমি প্রায়শই রিযিকের জন্য বাইরে থাকি, তাই পিতামাতার প্রতি
-              পূর্ণ খেদমত দেখাতে হবে।
-            </li>
-            <li>
-              স্বামীর অনুমতি ছাড়া কোথাও যাওয়ার অনুমতি নেই, এমনকি বাবার
-              বাড়িতেও নয়।
-            </li>
-            <li>
-              বাবার বাড়িতে তিনি যেভাবে আরাম ও সুবিধা পেয়েছেন, তা নিয়ে স্বামীর
-              কাছে কোনো অভিযোগ বা খোটা দেয়া যাবে না; যা হবে, তা সন্তুষ্টি ও
-              কৃতজ্ঞতার সঙ্গে গ্রহণ করতে হবে।
-            </li>
-            
-            <li>
-              দুনিয়াবি চাহিদা ত্যাগ করতে হবে।  
-            </li>
-            <li>
-              কমপক্ষে নিজের দুইজন ভাই থাকলে ভালো হয়।
-            </li>
-          </ul>
-        </div>
-
-        </div>
+        <ul class="list-disc list-inside space-y-2 leading-relaxed">
+          <li>
+            শরিয়ত অনুসারে পরিপূর্ণ পর্দা করতে হবে। শরিয়তে যে ১৪ জন পুরুষের কথা
+            বলা হয়েছে, তাদের বাইরে কারও সাথে দেখা বা ব্যক্তিগত আলাপ হবে না।
+          </li>
+          <li>শরিয়তের সকল বিষয়ে স্বামীর প্রতি সম্পূর্ণ আনুগত্য থাকতে হবে।</li>
+          <li>
+            যেহেতু আমি প্রায়শই রিযিকের জন্য বাইরে থাকি, তাই পিতামাতার প্রতি
+            পূর্ণ খেদমত দেখাতে হবে।
+          </li>
+          <li>
+            স্বামীর অনুমতি ছাড়া কোথাও যাওয়ার অনুমতি নেই, এমনকি বাবার বাড়িতেও
+            নয়।
+          </li>
+          <li>
+            বাবার বাড়িতে তিনি যেভাবে আরাম ও সুবিধা পেয়েছেন, তা নিয়ে স্বামীর
+            কাছে কোনো অভিযোগ বা খোটা দেয়া যাবে না; যা হবে, তা সন্তুষ্টি ও
+            কৃতজ্ঞতার সঙ্গে গ্রহণ করতে হবে।
+          </li>
+          <li>দুনিয়াবি চাহিদা ত্যাগ করতে হবে।</li>
+          <li>কমপক্ষে নিজের দুইজন ভাই থাকলে ভালো হয়।</li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
